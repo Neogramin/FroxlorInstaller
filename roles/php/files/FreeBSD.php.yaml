@@ -11,7 +11,7 @@
 # pkg remove php-<extension>
 #
 php:
-  version: php81
+  version: php82
   install_ioncube_loaders: false
   extensions:
   - bcmath
