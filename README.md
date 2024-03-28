@@ -21,7 +21,7 @@ When configuring your system during the initial install process, *do not enable 
 Login to your machine, open terminal (**ssh/shell**) and run the following command **as root**:   
 ```shell
 mkdir -p /etc/froxlor/installer && \
-git clone --quiet https://github.com/Hosting-MP/froxlor-installer.git /etc/froxlor/installer && \
+git clone --quiet https://github.com/thijsvanderwoude/froxlor-installer.git /etc/froxlor/installer && \
 sh /etc/froxlor/installer/install.sh
 ```
 Remember to exchange `/etc/` by `/usr/local/etc/` when using FreeBSD.
