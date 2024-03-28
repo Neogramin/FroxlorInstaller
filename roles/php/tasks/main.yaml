@@ -20,7 +20,7 @@
     packages:
       - package_list: "{{ [php.version] | product(php.extensions) | map('join', '-') | list }}"
         package_status: "{{ true }}"
-      - package_list: "{{ php.version + '-composer2' if ansible_os_family == 'FreeBSD' else 'composer' }}"
+      - package_list: "{{ php.version + 'composer' }}"
         package_status: "{{ true }}"
   notify:
     - "restart {{ froxlor_settings.webserver }}"
