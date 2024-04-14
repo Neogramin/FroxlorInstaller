@@ -13,13 +13,13 @@
   when: "ansible_version.full is version('2.9', '<=')"
 
 - name: Upgrade all installed packages
-  community.general.pkgng:
+  community.general.port:
     name: "*"
     state: latest
   when: "ansible_version.full is version('2.10', '>=')"
 
 - name: Upgrade all installed packages
-  community.general.pkgng:
+  community.general.port:
     name: "{{ system_packages|default([]) }}"
     state: latest
 #    autoremove: yes
